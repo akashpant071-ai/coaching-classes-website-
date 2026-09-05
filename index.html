@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genius Coaching Classes — Science &amp; Mathematics, Kashipur</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+
+  <!-- ================= PUBLIC SITE ================= -->
+  <div id="site">
+
+    <header class="site-nav">
+      <div class="nav-inner">
+        <a href="#home" class="brand">
+          <img src="logo.png" alt="Genius Coaching Classes logo" class="brand-mark">
+          <span class="brand-text">Genius Coaching Classes<small>Science &amp; Mathematics · Classes 6th–10th</small></span>
+        </a>
+        <button class="nav-toggle" onclick="toggleMobileNav()" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+        <nav class="links" id="mainNav">
+          <a href="#home" onclick="closeMobileNav()">Home</a>
+          <a href="#about" onclick="closeMobileNav()">About</a>
+          <a href="#fees" onclick="closeMobileNav()">Classes &amp; Fees</a>
+          <a href="#thoughts" onclick="closeMobileNav()">Thoughts</a>
+          <a href="#contact" onclick="closeMobileNav()">Contact</a>
+          <a href="javascript:void(0)" class="login-link" id="nav-student-link" onclick="openPortal('student')">Student Login</a>
+          <a href="javascript:void(0)" class="login-link" id="nav-teacher-link" onclick="openPortal('teacher')">Teacher Login</a>
+        </nav>
+      </div>
+    </header>
+    <div class="nav-scrim" id="navScrim" onclick="closeMobileNav()"></div>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="wrap hero-inner">
+        <div>
+          <h1>Genius Coaching Classes</h1>
+          <p class="lede" style="font-family:var(--font-head);font-size:19px;color:var(--ink);font-weight:500;">Science &amp; Mathematics Coaching for Classes 6th–10th</p>
+          <p class="lede">Helping students build strong concepts in Science and Mathematics through regular practice and focused learning.</p>
+          <div class="hero-actions">
+            <a href="#fees" class="btn btn-primary">View Classes &amp; Fees</a>
+            <a href="javascript:void(0)" class="btn btn-outline" id="hero-student-link" onclick="openPortal('student')">Student Login</a>
+          </div>
+          <div class="hero-call">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#51637C" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            Call now: <a href="tel:7703910357">7703910357</a>
+          </div>
+        </div>
+        <img src="logo.png" alt="Genius Coaching Classes logo" class="hero-art">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrap about-inner">
+        <div>
+          <h2 style="font-size:30px;">About Genius Coaching Classes</h2>
+          <p>Genius Coaching Classes provides Science and Mathematics coaching for students from Class 6th to Class 10th. Our focus stays on building clear concepts and steady practice, so students grow more confident with every session.</p>
+          <p>We keep the learning environment simple and student-focused, with attention given to how each student is actually progressing — not just what has been taught.</p>
+        </div>
+        <ul class="about-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5" /></svg> Concept-based learning</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5" /></svg> Regular practice</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5" /></svg> Doubt solving</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5" /></svg> Personal attention</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5" /></svg> Student-focused teaching</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5" /></svg> Attendance monitoring</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FEES -->
+    <section id="fees" style="background:var(--surface);">
+      <div class="wrap">
+        <h2 style="font-size:30px;">Classes &amp; Fees</h2>
+        <p style="max-width:56ch;">Science and Mathematics coaching, priced by class.</p>
+        <div class="fee-grid">
+          <div class="fee-card">
+            <div class="fee-num">Class</div>
+            <div class="fee-class">6th</div>
+            <div class="fee-subj">Science + Mathematics</div>
+            <div class="fee-price">₹600 <span>/ month</span></div>
+          </div>
+          <div class="fee-card">
+            <div class="fee-num">Class</div>
+            <div class="fee-class">7th</div>
+            <div class="fee-subj">Science + Mathematics</div>
+            <div class="fee-price">₹750 <span>/ month</span></div>
+          </div>
+          <div class="fee-card">
+            <div class="fee-num">Class</div>
+            <div class="fee-class">8th</div>
+            <div class="fee-subj">Science + Mathematics</div>
+            <div class="fee-price">₹800 <span>/ month</span></div>
+          </div>
+          <div class="fee-card">
+            <div class="fee-num">Class</div>
+            <div class="fee-class">9th</div>
+            <div class="fee-subj">Science + Mathematics</div>
+            <div class="fee-price">₹1,200 <span>/ month</span></div>
+          </div>
+          <div class="fee-card">
+            <div class="fee-num">Class</div>
+            <div class="fee-class">10th</div>
+            <div class="fee-subj">Science + Mathematics</div>
+            <div class="fee-price">₹1,400 <span>/ month</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THOUGHTS -->
+    <section id="thoughts">
+      <div class="wrap" style="text-align:center;">
+        <h2 style="font-size:30px;">Thought of the Day</h2>
+        <div class="thought-card">
+          <div class="thought-text" id="thoughtText">Small steps every day lead to big results.</div>
+          <div class="thought-actions"><button onclick="nextThought()">Next thought</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="background:var(--surface);">
+      <div class="wrap">
+        <h2 style="font-size:30px;">Contact</h2>
+        <div class="contact-box">
+          <div class="contact-addr">
+            <p style="font-family:var(--font-head);font-size:20px;font-weight:600;">Genius Coaching Classes</p>
+            <p>Kashipur, Uttarakhand</p>
+            <p>Ram Nagar Road, Bhagwantpur</p>
+            <p class="muted">7703910357</p>
+          </div>
+          <div class="contact-actions">
+            <a href="tel:7703910357" class="btn btn-primary btn-block">Call Now</a>
+            <a href="https://wa.me/917703910357" target="_blank" rel="noopener" class="btn btn-outline btn-block">WhatsApp</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Genius+Coaching+Classes+Ram+Nagar+Road+Bhagwantpur+Kashipur+Uttarakhand" target="_blank" rel="noopener" class="btn btn-ghost btn-block">Get Directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <span class="footer-brand"><img src="logo.png" alt="Genius Coaching Classes logo" class="footer-mark"> © 2026 Genius Coaching Classes, Kashipur</span>
+        <span>7703910357</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ================= PORTAL ================= -->
+  <div id="portal" style="display:none;">
+    <div class="portal-topbar">
+      <button class="portal-back" onclick="exitPortal()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+        Back to website
+      </button>
+      <span class="portal-role" id="portalRoleLabel"></span>
+    </div>
+    <div class="portal-wrap" id="portalRoot"></div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="logic.js"></script>
+  
+</body>
+
+</html>
