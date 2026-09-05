@@ -19,7 +19,7 @@ const SUPABASE_ANON_KEY = "sb_publishable_FF3AdQx9_nevNlyu3fkKfA_XQh2UL0s";
 // is mapped to an internal, never-emailed address like
 // "s101@students.geniuscoaching.internal". The student never sees or
 // needs to know this — they only ever type their Student ID.
-const STUDENT_EMAIL_DOMAIN = "students.geniuscoaching.internal";
+const STUDENT_EMAIL_DOMAIN = "students.geniuscoachingclsses.in";
 
 const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
